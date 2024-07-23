@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["dom", "esnext"],
+    "incremental": true,
+    "sourceMap": true,
+    "importHelpers": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    // 强制确保函数的每条路径都有返回值
+    "noImplicitReturns": true,
+    "experimentalDecorators": true,
+    // 允许js
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    // 禁用any
+    "noImplicitAny": true,
+    // 不能有null
+    "strictNullChecks": true,
+    // this不能不明确
+    "noImplicitThis": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "downlevelIteration": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "rootDir": ".",
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@assets/*": ["src/assets/*"],
+      "@pages/*": ["src/pages/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@states/*": ["src/states/*"],
+      "@connectors/*": ["src/connectors/*"],
+      "@abis/*": ["src/abis/*"],
+      "@types/*": ["src/types/*"],
+      "@utils/*": ["src/utils/*"]
+    }
+  },
+  "include": ["src", "tests"],
+  "exclude": ["node_modules", "dist", "scripts"]
+}
