@@ -22,6 +22,7 @@ const Home = () => {
   return (
     <div>
       <h2 className="text-red-500">Home Page!!!</h2>
+      <div>第二</div>
     </div>
   );
 };
