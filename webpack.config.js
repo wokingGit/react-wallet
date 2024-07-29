@@ -53,6 +53,11 @@ module.exports = {
         ],
       },
       {
+        // test: /\.worker\.js$/,
+        test: /\.worker\.(ts|tsx)$/,
+        use: { loader: 'worker-loader' },
+      },
+      {
         test: /\.(eot|woff|woff2|ttf|png|jpg|gif|svg)$/i,
         type: "asset/resource",
       },
